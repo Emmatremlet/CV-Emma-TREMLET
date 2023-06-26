@@ -5,11 +5,13 @@
     src: url("./Fonts/Raleway/Raleway-Regular.woff");
     src: url("./Fonts/Raleway/static/Raleway-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: "Raleway Bold";
     src: url("./Fonts/Raleway/Raleway-Bold.woff");
     src: url("./Fonts/Raleway/static/Raleway-Bold.ttf") format('truetype');
 }
+
 @font-face {
     font-family: "Raleway Italic";
     src: url("./Fonts/Raleway/Raleway-Italic.woff");
@@ -19,56 +21,123 @@
 header {
     color: white;
     text-align: center;
-    height: 10px;
+    order: 1;
+    position: center;
 }
 
-#coordonnees{
+#coordonnees {
     background-color: #2c1d27;
     color: white;
-    height: 50px;
-    width: 1000px;
+    height: 20px;
+    width: 1120px;
+    order: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-span {
-    text-align: center; 
+#adresse_postale {
+    order: 1;
+}
+
+#adresse_mail {
+    order: 2;
+}
+
+#numero_de_tel {
+    order: 3;
 }
 
 body {
+    width: 1160px;
     background-color: #782221;
     font-family: "Raleway", serif;
-    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    position: center;
 }
 
-h2{
+h2 {
     background-color: #dbc2a4;
+    line-height: 1;
+    padding: 5px;
     border-left-style: solid;
-    border-left-color:#782221;
+    border-left-color: #782221;
     border-left-width: thick;
-    color : black;
+    color: black;
     font-family: "Lato", serif;
 }
 
-strong{
+strong {
     font-family: "Raleway Bold", serif;
 }
 
 #Experiences_pro_et_formations {
     background-color: white;
-    margin : 10px;
-    padding : 10px;
+    width: 75%;
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 20px;
     font-family: "Raleway", serif;
+    order: 2;
+    border-right-style: solid;
+    border-right-color: black;
+    line-height: 1.5;
 }
 
-img {
-    width: 100px ;
+#body {
+    order: 3;
+    width: 1160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#Photo_de_profil {
+    width: 100px;
     border-radius: 50%;
-    border : 3px  #dbc2a4;
+    border: 3px #dbc2a4;
     box-shadow: 0px 0px 10px #dbc2a4;
 }
 
 aside {
     color: white;
-    width: 5px;
-    height: 10px;
+    width: 25%;
+    text-align: justify;
+    line-height: 2;
+    order: 1;
 }
 
+#A_propos {
+    text-indent: 50px;
+    line-height: 1.5;
+}
+
+footer {
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img {
+    width: 30px;
+    border: 3px #dbc2a4;
+    box-shadow: 0px 0px 10px #dbc2a4;
+    margin :10px;
+}
+
+#linkedin {
+    order: 1;
+}
+
+#twitter{
+    order: 2;
+}
+
+#github{
+    order : 3;
+}
