@@ -29,7 +29,7 @@ header {
     background-color: #2c1d27;
     color: white;
     height: 20px;
-    width: 1120px;
+    width: auto;
     order: 2;
     padding: 20px;
     display: flex;
@@ -50,13 +50,14 @@ header {
     order: 3;
 }
 
-body {
-    width: 1160px;
+div {
+    width: 1000px;
+    margin: 0 auto;
     background-color: #782221;
+    position: relative;
     font-family: "Raleway", serif;
     display: flex;
     flex-direction: column;
-    position: center;
 }
 
 h2 {
@@ -89,7 +90,7 @@ strong {
 
 #body {
     order: 3;
-    width: 1160px;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,6 +116,10 @@ aside {
     text-indent: 50px;
     line-height: 1.5;
 }
+#A_propos2 {
+    text-indent: 50px;
+    line-height: 1.5;
+}
 
 footer {
     order: 4;
@@ -127,17 +132,17 @@ footer img {
     width: 30px;
     border: 3px #dbc2a4;
     box-shadow: 0px 0px 10px #dbc2a4;
-    margin :10px;
+    margin: 10px;
 }
 
 #linkedin {
     order: 1;
 }
 
-#twitter{
+#twitter {
     order: 2;
 }
 
-#github{
-    order : 3;
+#github {
+    order: 3;
 }
